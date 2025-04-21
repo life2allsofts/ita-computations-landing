@@ -459,22 +459,28 @@ footer a[href="#top"]:hover {
         height: 200px;
     }
 }
-.nav-link {
-  color: #FFFFFF !important; /* White text */
-  background-color: #7C2929; /* Dark red background */
-  padding: 0; /* Removes extra padding around the links */
-  margin: 0; /* Removes extra margin around the links */
-  text-decoration: none; /* Removes underline */
-}
+ nav {
+      background-color: #E0B881;
+      text-align: center;
+      padding: 10px;
+    }
 
-.nav-links a {
-  display: inline; /* Ensures links are inline with the pipe symbol */
-}
+    nav a {
+      margin: 0 4px;
+      text-decoration: none;
+      color: #7C2929;
+      font-weight: bold;
+    }
 
-.nav-links {
-  display: inline; /* Keeps all links on the same line */
-  gap: 0; /* Removes any gap between links (if flexbox/grid is in use) */
-}
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+    }
 /* Cookie Consent Modal Styles */
 .cookie-modal {
   border: 1px solid #E0B881; /* Golden Brown Border */
@@ -587,7 +593,7 @@ footer a[href="#top"]:hover {
   <div class="header-content">
     <div class="branding">
       <h1>ITA Computations</h1>
-      <p class="tagline">Solve Your Survey Computational Needs With Just A Few Clicks</p>
+      <p class="tagline">Geospatial Tools for Modern Ghanaian Surveyors</p>
     </div>
   </div>
 
@@ -596,15 +602,13 @@ footer a[href="#top"]:hover {
   <div class="logo" aria-hidden="true">ITA</div>
   <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-links">
     <span class="sr-only">Menu</span>
-    ☰
-  </button>
-  <div class="nav-links" id="nav-links">
-    <a href="index.html" aria-current="page" class="nav-link">Home</a>| 
-    <a href="about.html" class="nav-link">About</a>| 
-    <a href="downloads.html" class="nav-link">Downloads</a>| 
-    <a href="credentials.html" class="nav-link">Credentials</a>|
-    <a href="blog.html" class="nav-link">Blog</a>
-  </div>
+  
+  <nav>
+    <a href="index.html">Home</a>| 
+    <a href="about.html">About</a>| 
+    <a href="downloads.html">Downloads</a>| 
+    <a href="credentials.html">Credentials</a>|
+    <a href="blog.html">Blog</a>
 </nav>
 </header>
 
